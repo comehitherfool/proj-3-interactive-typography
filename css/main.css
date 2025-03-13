@@ -3,3 +3,25 @@ body {
     min-height: 100vh;
     background-color: rgb(208, 240, 252);
 }
+
+/* test stuff */
+
+.spinner {
+    margin-top: 4rem;
+    text-align: center;
+  }
+  
+  .spinner {
+    animation: spin 2s linear infinite;
+  }
+  @keyframes spin {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .lsu-spinner {
+    width: 75px;
+    margin-left: auto;
+    margin-right: auto;
+  }
