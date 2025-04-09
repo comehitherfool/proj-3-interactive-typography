@@ -13,13 +13,17 @@
   <meta property="og:image" content="">
 
   <link rel="manifest" href="site.webmanifest">
-  <link rel="icon" href="icon.png">
+  <link rel="icon" href="./img/funnyguy.jpg">
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script>
@@ -31,20 +35,25 @@
   </script>
 
 </head>
-</html>
 
 <body>
-<div class="page-flow">
-  <body>
-    <button>Start Miku Adventure</button><br><br>
-    
-    <div id="div1" style="width:3000px;height:3000px;background-color:rgb(210, 246, 255);"></div><br>
-    
-  </body>
+<div>
+  <div>
+    <div id="div1" style="width:3000px;height:2000px;background-color:rgb(210, 246, 255);"></div><br>
+  </div>
 </div>
 
-<div class="main">
-	<div class="initial-snow">
+<button id="button" style="background: none; border: none; padding: 0; cursor: pointer;">
+  <img src="./img/mmiku.png" alt="Miku Image" style="width: 130px; height: 200px;" />
+</button>
+  </div>
+
+<div class="heading">
+  <h1>Explore the Town</h1>
+  <p>click on miku to move!</p>
+</div>
+
+<div class="initial-snow">
 		<div class="snow">&#10052;</div>
 		<div class="snow">&#10052;</div>
 		<div class="snow">&#10052;</div>
@@ -96,11 +105,6 @@
 		<div class="snow">&#10052;</div>
 		<div class="snow">&#10052;</div>
 	</div>
-
-  <div class="spinner lsu-spinner">
-    <img src="./img/mmiku.png" alt="">
-  </div>
-</div>
 
   <script src="js/main.js"></script>
 </body>

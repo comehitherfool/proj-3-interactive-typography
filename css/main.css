@@ -1,33 +1,74 @@
-/* Place CSS styles here */
+.architects-daughter-regular {
+  font-family: "Architects Daughter", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
-    background-size: cover;
-    background-image: url(../img/roadmap.png);
-
+  background-size: cover;
+  background-image: url(../img/roadmap.png);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Architects Daughter", cursive;
 }
 
-.page-flow {
-  overflow-x: hidden;
+*{
+  box-sizing:border-box;
+}
+html,body{
+  width:100%; height:100%; margin:0; padding:0;
+}
+body{
+  position:relative;
+}
+body>*{
+  position:absolute;
+}
+#button{
+  margin:0;
+  z-index: 10;
 }
 
-/* test stuff / no web kits*/
+#button:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 15px rgba(80, 135, 206, 0.308);
+}
 
-  
-  .spinner {
-    animation: spin 2s linear infinite;
-  }
-  @keyframes spin {
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
-  .lsu-spinner {
-    width: 75px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
 
-/* Snow test*/
+.heading {
+  background-image: url(../img/funnyguy.jpg);
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  animation: float 2s ease-in-out infinite;
+  z-index: 30;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0); /* Start at normal position */
+  }
+  50% {
+    transform: translateY(-20px); /* Move up */
+  }
+  100% {
+    transform: translateY(0); /* Return to normal position */
+  }
+}
+
 .initial-snow {
 	position: absolute;
 	top: 0;
